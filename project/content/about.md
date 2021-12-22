@@ -1,0 +1,1 @@
+I'm a Full-Stack Developer interested in Flask, Django, automation, and everything in between. Beautiful code lover and Space Exploration enthusiast.

@@ -1,0 +1,4 @@
+**Languages:** English -- full professional proficiency.
+
+**Awards:** 2015 Global Telecoms Business Innovation Awards and 2015
+"Tela Viva Móvel" Awards for the *blah* app.
