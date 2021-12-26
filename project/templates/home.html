@@ -63,7 +63,7 @@
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">About</h2>
 				    <div class="resume-section-content">
-						<p class="mb-0">{% include "content/about.md" without context %}</p>
+						<p class="mb-0">{% include "content/a01-about.html" without context %}</p>
 				    </div>
 			    </section><!--//about-section-->
 				<section class="resume-section experience-section mb-5">
@@ -101,19 +101,63 @@
 								</div><!--//resume-timeline-item-header-->
 								<div class="resume-timeline-item-desc">
 									<ul>
-										{% include "content/experience/product-manager.html" without context %}
+										{% include "content/experience/b01-product-manager.html" without context %}
 									</ul>
 									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
 									<ul class="list-inline">
-										{% include "content/skills/skills-product-manager.html" without context %}
+										{% include "content/skills/b01-skills-product-manager.html" without context %}
 									</ul>
 									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Links:</h4>
 									<ul class="list-inline">
-										{% include "content/links/links-product-manager.html" without context %}
+										{% include "content/links/b01-links-product-manager.html" without context %}
 									</ul>
 								</div><!--//resume-timeline-item-desc-->
 							</article><!--//resume-timeline-item-->
 							
+							
+
+							<article class="resume-timeline-item position-relative pb-5">
+								<div class="resume-timeline-item-header mb-2">
+
+									<div class="container-fluid d-none d-sm-block">
+										<div class="row">
+											<div class="col-sm-6">
+												<h3 class="resume-position-title font-weight-bold mb-1 text-start">Founder</h3>
+												<div class="resume-position-time text-start">2008 - Present</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="resume-company-name ms-auto text-end">GOALMOON.COM</div>
+											</div>											
+										</div>
+									</div>
+									<div class="container-fluid d-sm-none">
+										<div class="row">
+											<div class="col-sm-6">
+												<h3 class="resume-position-title font-weight-bold mb-1 text-start">Founder</h3>
+												<div class="resume-position-time text-start">2008 - Present</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="resume-company-name ms-auto text-start">GOALMOON.COM</div>
+											</div>
+										</div>
+									</div>
+
+								</div><!--//resume-timeline-item-header-->
+								<div class="resume-timeline-item-desc">
+									<ul>
+										{% include "content/experience/b02-goalmoon.html" without context %}
+									</ul>
+									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
+									<ul class="list-inline">
+										{% include "content/skills/b02-skills-goalmoon.html" without context %}
+									</ul>
+									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Links:</h4>
+									<ul class="list-inline">
+										{% include "content/links/b02-links-goalmoon.html" without context %}
+									</ul>
+								</div><!--//resume-timeline-item-desc-->
+							</article><!--//resume-timeline-item-->
+
 							<article class="resume-timeline-item position-relative pb-5">
 								<div class="resume-timeline-item-header mb-2">
 
@@ -145,57 +189,16 @@
 								</div><!--//resume-timeline-item-header-->
 								<div class="resume-timeline-item-desc">
 									<ul>
-										{% include "content/experience/project-manager.html" without context %}
+										{% include "content/experience/b03-project-manager.html" without context %}
 									</ul>
 									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
 									<ul class="list-inline">
-										{% include "content/skills/skills-project-manager.html" without context %}
+										{% include "content/skills/b03-skills-project-manager.html" without context %}
 									</ul>
 								</div><!--//resume-timeline-item-desc-->
 							</article><!--//resume-timeline-item-->
 
 
-							<article class="resume-timeline-item position-relative pb-5">
-								<div class="resume-timeline-item-header mb-2">
-
-									<div class="container-fluid d-none d-sm-block">
-										<div class="row">
-											<div class="col-sm-6">
-												<h3 class="resume-position-title font-weight-bold mb-1 text-start">Founder</h3>
-												<div class="resume-position-time text-start">2008 - Present</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="resume-company-name ms-auto text-end">GOALMOON.COM</div>
-											</div>											
-										</div>
-									</div>
-									<div class="container-fluid d-sm-none">
-										<div class="row">
-											<div class="col-sm-6">
-												<h3 class="resume-position-title font-weight-bold mb-1 text-start">Founder</h3>
-												<div class="resume-position-time text-start">2008 - Present</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="resume-company-name ms-auto text-start">GOALMOON.COM</div>
-											</div>
-										</div>
-									</div>
-
-								</div><!--//resume-timeline-item-header-->
-								<div class="resume-timeline-item-desc">
-									<ul>
-										{% include "content/experience/goalmoon.html" without context %}
-									</ul>
-									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
-									<ul class="list-inline">
-										{% include "content/skills/skills-goalmoon.html" without context %}
-									</ul>
-									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Links:</h4>
-									<ul class="list-inline">
-										{% include "content/links/links-goalmoon.html" without context %}
-									</ul>
-								</div><!--//resume-timeline-item-desc-->
-							</article><!--//resume-timeline-item-->
 							
 							<article class="resume-timeline-item position-relative pb-5">
 								<div class="resume-timeline-item-header mb-2">
@@ -229,11 +232,11 @@
 								</div><!--//resume-timeline-item-header-->
 								<div class="resume-timeline-item-desc">
 									<ul>
-										{% include "content/experience/technical-advisor.html" without context %}
+										{% include "content/experience/b04-technical-advisor.html" without context %}
 									</ul>
 									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
 									<ul class="list-inline">
-										{% include "content/skills/skills-technical-advisor.html" without context %}
+										{% include "content/skills/b04-skills-technical-advisor.html" without context %}
 									</ul>
 								</div><!--//resume-timeline-item-desc-->
 							</article><!--//resume-timeline-item--><!--//resume-timeline-item-->
@@ -272,11 +275,11 @@
 								</div><!--//resume-timeline-item-header-->
 								<div class="resume-timeline-item-desc">
 									<ul>
-										{% include "content/experience/directlink.html" without context %}
+										{% include "content/experience/b05-directlink.html" without context %}
 									</ul>
 									<h4 class="resume-timeline-item-desc-heading font-weight-bold">Skills:</h4>
 									<ul class="list-inline">
-										{% include "content/skills/skills-directlink.html" without context %}
+										{% include "content/skills/b05-skills-directlink.html" without context %}
 									</ul>
 								</div><!--//resume-timeline-item-desc-->
 							</article><!--//resume-timeline-item--><!--//resume-timeline-item-->

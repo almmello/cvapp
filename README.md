@@ -1,29 +1,29 @@
 ## Overview
 
-This Flask application displays my family's favorite recipes!  [Frozen-Flask](https://pythonhosted.org/Frozen-Flask/) is
+This Flask application displays my résumé!  [Frozen-Flask](https://pythonhosted.org/Frozen-Flask/) is
 used to generate the static files based on the routes specified in the Flask app.  These static files are hosted on
 [Netlify](https://www.netlify.com):
 
-![Kennedy Family Recipes](project/static/img/flask_recipe_app_screenshot.png?raw=true "Kennedy Family Recipes")
+[Alexandre's Résumé](https://almmmello.com.br)
 
-For details on how this Flask app generates static files, check out the [Generating a Static Site with Flask and Deploying it to Netlify](https://testdriven.io/blog/) blog post on [TestDriven](https://testdriven.io/).
+For details on how this Flask app generates static files, check out the [Generating a Static Site with Flask and Deploying it to Netlify](https://testdriven.io/blog/static-site-flask-and-netlify/) where I had the first inspiration.
 
 ## Website
 
-[https://www.kennedyrecipes.com/](https://www.kennedyrecipes.com/)
+[almmello.com.br](https://almmello.com.br)
 
 ## Installation Instructions
 
-Pull down the source code from this GitLab repository:
+Pull down the source code from this GitHub repository:
 
 ```sh
-git clone git@gitlab.com:patkennedy79/flask-recipe-app.git
+git clone https://github.com/almmello/cvapp
 ```
 
 Create a new virtual environment:
 
 ```sh
-$ cd flask-recipe-app
+$ cd cv_app
 $ python3 -m venv venv
 ```
 
@@ -76,16 +76,3 @@ The static files are generated in the */project/build/* directory, which can the
 
 This application is written using Python 3.9.0.
 
-## Unit Testing
-
-To run all the tests:
-
-```sh
-(venv) $ pytest -v
-```
-
-To check the code coverage of the tests:
-
-```sh
-(venv) $ pytest --cov-report term-missing --cov=project
-```
