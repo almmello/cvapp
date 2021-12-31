@@ -45,6 +45,8 @@
   }
 }
 
+
+
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -9527,6 +9529,13 @@ textarea.form-control-lg {
 }
 
 @media print {
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+
+
+  
   .d-print-inline {
     display: inline !important;
   }
@@ -9558,6 +9567,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+
 
 /*************************** Pillar Styles ****************************/
 body {
