@@ -15,10 +15,18 @@ html_file = "project/build/index.html"
 download_dir2 = os.path.join(actual_dir, download_dir)
 open_file = os.path.join(actual_dir, html_file)
 open_par = "file:" + open_file
+del_file = actual_dir + "/" + download_dir + "/ALMMELLO Résumé.pdf"
+
+
 chrome_options = Options()
 
-print("Debug")
-print(open_par)
+
+os.remove(del_file)
+
+
+#print("Debug")
+#print(del_file)
+
 
 settings = {
     "recentDestinations": [{
