@@ -9577,7 +9577,7 @@ body {
   background: #F7F8FA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #434E5E;
+  color: #374161;
   overflow-x: hidden;
 }
 
@@ -9737,7 +9737,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-position-title {
   font-size: 1.125rem;
-  color: #434E5E;
+  color: #374161;
 }
 
 .resume-timeline-item-desc-heading {
@@ -9746,16 +9746,16 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-skills-cat {
   font-size: 1rem;
-  color: #434E5E;
+  color: #374161;
 }
 
 .resume-skill-name {
   font-size: 0.8125rem;
-  color: #434E5E;
+  color: #374161;
 }
 
 .resume-degree {
-  color: #434E5E;
+  color: #374161;
 }
 
 .resume-degree-org {
@@ -9775,7 +9775,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-award-name {
   font-weight: bold;
-  color: #434E5E;
+  color: #374161;
 }
 
 .resume-award-desc {
@@ -9783,7 +9783,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-lang-name {
-  color: #434E5E;
+  color: #374161;
 }
 
 .footer .fa-heart {
