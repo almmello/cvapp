@@ -21,7 +21,8 @@ del_file = actual_dir + "/" + download_dir + "/ALMMELLO Résumé.pdf"
 chrome_options = Options()
 
 
-os.remove(del_file)
+if os.path.exists(del_file):
+  os.remove(del_file)
 
 
 #print("Debug")
