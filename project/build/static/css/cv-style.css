@@ -9732,17 +9732,17 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-company-name {
   color: #58677c;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .resume-position-time {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #aab4c3;
 }
 
 .resume-position-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #374161;
 }
 
