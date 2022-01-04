@@ -9528,7 +9528,18 @@ textarea.form-control-lg {
   }
 }
 
+@media screen {
+  .print-only {
+    display: none;
+  }
+  
+}
+
 @media print {
+  .online-only {
+    display: none;
+  }
+
   .pagebreak {
     clear: both;
     page-break-after: always;
@@ -9541,7 +9552,7 @@ textarea.form-control-lg {
   .resume-social {
     margin-right: 1rem;
   }
-  
+
   .d-print-inline {
     display: inline !important;
   }
