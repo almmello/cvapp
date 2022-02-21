@@ -10,9 +10,9 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/rga/<path:path>')
-def send_js(path):
-    return send_from_directory('rga', path)
+@app.route("/cases")
+def cases():
+    return render_template('cases.html')
 
 
 
