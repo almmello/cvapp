@@ -9650,11 +9650,11 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 .resume-header {
   background: #374161;
   color: rgba(255, 255, 255, 0.9);
-  height: 240px;
+  height: 272px;
 }
 
 .resume-header .picture {
-  width: 240px;
+  width: 272px;
 }
 
 .resume-header .name {
