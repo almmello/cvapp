@@ -41,7 +41,7 @@ settings = {
 
     "customMargins": "1cm, 0cm, 1cm, 0cm",
     #"marginsType": 2,
-    "scaling": 70,
+    "scaling": 62,
     "scalingType": 3,
     "scalingTypePdf": 3,
     #"isLandscapeEnabled":True,#Landscape horizontal, portrait portrait, if this parameter is not set, the default portrait
