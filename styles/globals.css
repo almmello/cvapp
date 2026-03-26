@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores do Design System — Goalmoon */
+  --color-navy: #374161;
+  --color-navy-dark: #293047;
+  --color-navy-header: #3F4A6E;
+  --color-interactive: #6374AD;
+  --color-interactive-light: #879FED;
+  --color-mint: #71b399;
+  --color-cool-1: #dbe2ea;
+  --color-cool-2: #eaf0f5;
+
+  /* Tipografia — CSS variable exposta pelo next/font */
+  --font-sans: var(--font-montserrat), 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media print {
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #666;
+  }
+  /* Links que não precisam exibir URL no print */
+  a.no-print-url::after {
+    content: none;
+  }
+}
