@@ -28,25 +28,26 @@ export default function PdfDownloadButton() {
       setState('idle')
     } catch {
       setState('error')
-      // Volta ao estado normal após 3s para o usuário poder tentar novamente
       setTimeout(() => setState('idle'), 3000)
     }
   }
+
+  const colorClass = state === 'error'
+    ? 'text-red-400 decoration-red-400/50'
+    : 'text-mint decoration-mint/50 hover:text-mint/80'
 
   return (
     <button
       onClick={handleDownload}
       disabled={state === 'loading'}
-      className="text-left flex items-center gap-3 font-semibold transition-colors duration-150 disabled:cursor-wait
-        text-mint hover:text-mint/80 data-[state=error]:text-red-400"
-      data-state={state}
+      className={`flex items-center gap-2 underline font-semibold transition-colors duration-150 disabled:cursor-wait text-sm ${colorClass}`}
       aria-label="Download CV as PDF"
     >
-      <span className="w-8 h-8 bg-mint/20 rounded flex items-center justify-center shrink-0">
+      <span className="w-5 h-5 bg-black/30 flex items-center justify-center shrink-0">
         {state === 'loading' ? (
-          <FontAwesomeIcon icon={faSpinner} className="w-3.5 h-3.5 animate-spin" />
+          <FontAwesomeIcon icon={faSpinner} className="w-2.5 h-2.5 animate-spin" />
         ) : (
-          <FontAwesomeIcon icon={faDownload} className="w-3.5 h-3.5" />
+          <FontAwesomeIcon icon={faDownload} className="w-2.5 h-2.5" />
         )}
       </span>
       {state === 'idle'    && 'Download PDF Version'}
