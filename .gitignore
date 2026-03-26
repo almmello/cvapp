@@ -10,40 +10,8 @@ docs/
 # Copilot files
 .github
 
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Mac custom attributes file (Desktop Service Store)
+# macOS
 .DS_Store
-
-# PyCharm files
-.idea/
-
-# Instance Folder - used for run-time files
-instance/*.cfg
-instance/*.db
-instance/*.log
-instance/*.log*
-
-# Log Files
-instance/logs/
-*.log
-
-# Coverage output
-.coverage
-htmlcov/
-
-# Virtual Environment
-/venv/
-
-# pytest files
-.pytest_cache/
-
-# Next.js
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -66,7 +34,6 @@ htmlcov/
 /build
 
 # misc
-.DS_Store
 *.pem
 
 # debug
