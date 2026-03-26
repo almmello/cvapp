@@ -42,8 +42,8 @@ export default function ProductManager() {
         <SkillBadge label="New Business Development" />
       </ul>
 
-      <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Links:</h4>
-      <ul className="space-y-1.5">
+      <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2 print:hidden">Links:</h4>
+      <ul className="space-y-1.5 print:hidden">
         <li>
           <a
             className="text-interactive hover:text-interactive-light underline decoration-interactive/40 hover:decoration-interactive transition-colors text-sm inline-flex items-center gap-1.5 print:no-underline print:text-navy"

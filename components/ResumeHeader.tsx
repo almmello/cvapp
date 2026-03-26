@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faMobileAlt, faCalendarAlt, faDownload, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt, faCalendarAlt, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import PdfDownloadButton from '@/components/PdfDownloadButton'
 
 export default function ResumeHeader() {
   return (
     <header className="bg-navy-dark text-white py-8 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+        <div className="flex flex-col md:flex-row print:flex-row items-center md:items-start print:items-start gap-6 md:gap-8 print:gap-8">
 
           {/* Foto */}
           <div className="shrink-0 text-center">
@@ -22,7 +23,7 @@ export default function ResumeHeader() {
           </div>
 
           {/* Informações primárias */}
-          <div className="flex-grow text-center md:text-left">
+          <div className="flex-grow text-center md:text-left print:text-left">
             <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-wide leading-tight mb-0">
               Alexandre
             </h1>
@@ -33,7 +34,7 @@ export default function ResumeHeader() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start"
+                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start print:justify-start"
                   href="mailto:almmello@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,7 +45,7 @@ export default function ResumeHeader() {
               </li>
               <li>
                 <a
-                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start"
+                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start print:justify-start"
                   href="tel:+16508348841"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,7 +56,7 @@ export default function ResumeHeader() {
               </li>
               <li>
                 <a
-                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start"
+                  className="text-white/80 hover:text-mint transition-colors duration-150 inline-flex items-center gap-2 justify-center md:justify-start print:justify-start"
                   href="tel:+5521995121700"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,7 +69,7 @@ export default function ResumeHeader() {
           </div>
 
           {/* Redes sociais */}
-          <div className="shrink-0 text-sm w-full md:w-auto">
+          <div className="shrink-0 text-sm w-full md:w-auto print:w-auto">
             <ul className="space-y-3">
               <li>
                 <a
@@ -136,18 +137,7 @@ export default function ResumeHeader() {
                 </a>
               </li>
               <li className="print:hidden">
-                <a
-                  className="text-mint hover:text-mint/80 transition-colors duration-150 flex items-center gap-3 font-semibold"
-                  href="/pdf/almmello.pdf"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="w-8 h-8 bg-mint/20 rounded flex items-center justify-center shrink-0">
-                    <FontAwesomeIcon icon={faDownload} className="w-3.5 h-3.5" />
-                  </span>
-                  Download PDF Version
-                </a>
+                <PdfDownloadButton />
               </li>
               <li className="hidden print:flex items-center gap-3 text-white/80">
                 <span className="w-8 h-8 bg-white/10 rounded flex items-center justify-center shrink-0">

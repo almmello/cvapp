@@ -16,13 +16,58 @@
 }
 
 @media print {
+  /* Forçar impressão de backgrounds (header navy) */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Exibir URL dos links externos (apenas no corpo do CV) */
   a[href]::after {
     content: " (" attr(href) ")";
     font-size: 0.75em;
     color: #666;
   }
-  /* Links que não precisam exibir URL no print */
+
+  /* Header: links sociais já têm o URL como texto — não repetir */
+  header a[href]::after {
+    content: none;
+  }
+
+  /* Não exibir URL em links de contato (texto já é o endereço) */
+  a[href^="mailto:"]::after,
+  a[href^="tel:"]::after,
   a.no-print-url::after {
     content: none;
   }
+
+  /* Links de mídia (.mp4) não fazem sentido em PDF — ocultar */
+  a[href$=".mp4"],
+  a[href$=".mp4"]::after {
+    display: none !important;
+    content: none;
+  }
+
+  /* Garantir que ícones FontAwesome SVG imprimam corretamente */
+  svg {
+    display: inline-block !important;
+  }
+
+  /* ── Quebras de página ── */
+
+  /* Títulos de seção não devem ficar sozinhos no fim da página */
+  h2, h3 {
+    break-after: avoid;
+  }
+
+  /* Badges de skill e itens de lista não devem ser cortados */
+  li {
+    break-inside: avoid;
+  }
+
+  /* Bloco de educação/idiomas/prêmios (two-column) — manter junto */
+  .print-section {
+    break-inside: avoid;
+  }
+
 }
