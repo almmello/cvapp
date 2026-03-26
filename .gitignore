@@ -1,5 +1,16 @@
-home copy.html
-ALMMELLO Résumé (*
+# Docs
+docs/
+
+# VS Code files
+.vscode/
+
+# Cursor files
+.cursor/
+
+# Copilot files
+.github
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
