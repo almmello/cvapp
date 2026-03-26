@@ -8,7 +8,7 @@ import Awards from '@/components/content/Awards'
 
 export default function Home() {
   return (
-    <article className="min-h-screen bg-cool-2 print:bg-white">
+    <article className="min-h-screen bg-cool-1 print:bg-white py-10 print:py-0">
       <div className="max-w-4xl mx-auto bg-white shadow-xl print:shadow-none">
 
         <ResumeHeader />
