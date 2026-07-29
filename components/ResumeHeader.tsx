@@ -48,9 +48,9 @@ export default function ResumeHeader() {
                 </a>
               </li>
               <li>
-                <a className={linkClass} href="tel:+5521995121700" target="_blank" rel="noopener noreferrer">
+                <a className={linkClass} href="tel:+5543988690083" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faMobileAlt} className={iconClass + ' shrink-0'} />
-                  +55 21 99512-1700
+                  +55 43 98869-0083
                 </a>
               </li>
             </ul>
